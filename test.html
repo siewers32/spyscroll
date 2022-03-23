@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+        padding:0px;
+        margin:0px;
+    }
+    header {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        top: -60px;
+        align-self: flex-start; /* <-- this is the fix */        height:100px;
+        width:100%;
+        background-color:lightblue;
+    }
+    .wrapper, .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+    main {
+        min-height:1400px;
+    }
+    aside {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        top: 40px;
+        align-self: flex-start; /* <-- this is the fix */
+        flex-grow: 1;
+        background-color:yellow;
+    }
+    main {
+        width:600px;
+        background-color:red;
+    }
+</style>
+<body>
+<div class="wrapper">
+<header>
+    Dit is de header
+</header>
+    <div class="content">
+        <aside class="rightside">
+            rightside
+        </aside>
+        <main>
+           Main
+        </main>
+        <aside class="leftside">
+            leftside
+        </aside>
+    </div>
+</div>
+</body>
+</html>
