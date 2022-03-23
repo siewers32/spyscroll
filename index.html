@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Style the header */
+        .header {
+            padding: 10px 16px;
+            background: #555;
+            color: #f1f1f1;
+        }
+
+        .active {
+            background-color: red;
+        }
+
+        /* Page content */
+        .content {
+            padding: 16px;
+        }
+
+        /* The sticky class is added to the header with JS when it reaches its scroll position */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+        }
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+            padding-top: 102px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header sticky" id="myHeader">
+    <h2>My Header</h2>
+    <ul>
+        <li>
+            <a class="nav-link active" href="#section1">Naar section 1</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#section2">Naar section 2</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#section3">Naar section 3</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#section4">Naar section 4</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#section5">Naar section 5</a>
+        </li>
+
+    </ul>
+</div>
+
+<div class="content">
+<section class="hero-bg" id="section1">
+<h2>Section 1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque dui vel sagittis gravida. In fermentum scelerisque urna vel lobortis. Donec porta eros in purus cursus, eu feugiat tortor tincidunt. Integer consequat, ipsum vel pretium finibus, justo nisi convallis ante, eget tempus arcu elit sed turpis. Nullam tempor feugiat elit quis congue. Aliquam eu maximus mauris, vitae condimentum sem. Sed scelerisque faucibus nunc sit amet lobortis. Etiam lacus sem, sagittis vitae aliquet ac, ullamcorper sed ante. Proin consectetur ligula vitae venenatis euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+</section>
+<section class="hero-bg" id="section2">
+    <h2>Section 2</h2>
+<p>Sed rhoncus, enim commodo varius laoreet, erat dui lobortis justo, in sollicitudin est libero non tellus. Nulla facilisi. Integer quam felis, pretium at facilisis vitae, ultrices quis urna. Maecenas sit amet quam purus. Pellentesque at ipsum pulvinar nulla vehicula maximus. Nullam tristique turpis nisi. Nunc suscipit mollis ante. Cras id ipsum nibh. In dapibus, ligula et aliquet faucibus, arcu justo blandit erat, vel finibus libero dui eu risus. Etiam eu sapien risus.</p>
+</section>
+<section class="hero-bg" id="section3">
+    <h2>Section 3</h2>
+<p>Phasellus tellus elit, ullamcorper in lacinia et, finibus a magna. Morbi sagittis, diam eget hendrerit fermentum, nisi leo placerat risus, sit amet commodo eros lacus nec nunc. Suspendisse finibus interdum ipsum, at luctus nibh egestas vitae. Aliquam lacinia, ex ac fringilla cursus, lacus dolor elementum erat, et vestibulum libero tortor quis metus. In hac habitasse platea dictumst. Sed eget lacus ligula. Nam nec orci luctus, vehicula justo non, dapibus sapien. Quisque condimentum sed orci eu semper. Sed dignissim vel risus vitae faucibus. Nam sollicitudin urna at ligula suscipit volutpat. Etiam finibus id massa nec semper. Ut massa nisi, aliquet vitae bibendum ut, consectetur sit amet metus. Sed risus ex, bibendum at nibh et, fermentum porta erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce porttitor odio vel vestibulum vestibulum.</p>
+</section>
+<section class="hero-bg" id="section4">
+    <h2>Section 4</h2>
+<p>Cras ultricies ipsum vel ultricies facilisis. Nulla elit quam, placerat suscipit elit in, mattis tincidunt magna. Ut sit amet sagittis ligula. Praesent purus urna, sollicitudin id arcu a, finibus ultrices sapien. Cras ac auctor mi. Aliquam vitae urna faucibus, vehicula diam et, porta dui. Nullam a eros elementum, fermentum ante ut, egestas turpis. Phasellus suscipit ultricies consequat. Aliquam vulputate eleifend orci eu mattis. Maecenas feugiat justo lectus, vitae egestas risus mollis a. Maecenas ante mi, blandit at venenatis sed, ornare sit amet nunc. Duis libero urna, tristique ut iaculis eu, efficitur nec ligula. Aenean sodales justo vitae arcu ullamcorper viverra. Aenean lectus massa, pellentesque ut tortor a, finibus hendrerit nulla. Aenean in leo nec augue commodo elementum ac lacinia urna. Aenean vitae condimentum eros.</p>
+</section>
+<section class="hero-bg" id="section5">
+    <h2>Section 5</h2>
+<p>Mauris mollis quis urna id egestas. Morbi sapien metus, fringilla eu gravida a, tempus vel orci. Cras tincidunt odio non tristique congue. Phasellus convallis felis libero, vitae vestibulum ligula pretium ac. Vestibulum sed mauris at augue congue rhoncus. Duis aliquam porta lacus, eget interdum lectus. Nullam convallis lacinia quam ullamcorper egestas. Aenean quis dolor at nisi maximus tristique quis sed est. In congue ipsum ac elit viverra ultricies. Mauris feugiat, urna quis fringilla scelerisque, eros felis tempor lectus, tristique malesuada felis sapien nec turpis. Nulla id tincidunt neque. Nullam quis mauris justo. Phasellus tempus mauris sit amet mi iaculis, a eleifend ligula pretium. Suspendisse potenti.</p>
+</section>
+</div>
+<script>
+    const makeNavLinksSmooth = ( ) => {
+        const navLinks = document.querySelectorAll( '.nav-link' );
+
+        for ( let n in navLinks ) {
+            if ( navLinks.hasOwnProperty( n ) ) {
+                navLinks[ n ].addEventListener( 'click', e => {
+                    e.preventDefault( );
+                    document.querySelector( navLinks[ n ].hash )
+                        .scrollIntoView( {
+                            behavior: "smooth"
+                        } );
+                } );
+            }
+        }
+    }
+
+    const spyScrolling = ( ) => {
+        const sections = document.querySelectorAll( '.hero-bg' );
+
+        window.onscroll = ( ) => {
+            const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+            for ( let s in sections )
+                if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+                    const id = sections[ s ].id;
+                    document.querySelector( '.active' ).classList.remove( 'active' );
+                    document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+                }
+        }
+    }
+
+    makeNavLinksSmooth( );
+    spyScrolling( );
+</script>
+</body>
+</html>
