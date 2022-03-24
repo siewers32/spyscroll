@@ -1,0 +1,85 @@
+:root {
+    scroll-behavior: smooth;
+    --c-brand: #f58220;
+    --c-brand-light: #f58220;
+    --c-text: #343469;
+    --c-text-accent: var(--c-brand);
+    --c-text-light-1: #424286;
+    --c-text-light-2: #5656a6;
+    --c-text-light-3: #8383c5;
+    --c-bg:#f1f1f1;
+    --c-bg-light: #fefefe;
+    --c-bg-dark:#555555;
+}
+
+
+.standard_size {
+    width: 134px;
+}
+
+.small_size {
+    margin-top:35px;
+    width: 100px;
+}
+
+body {
+    padding:0px;
+    margin:0px;
+    background-color: var(--c-bg);
+}
+header, footer {
+    box-sizing: border-box;
+    width:100%;
+    height:100px;
+}
+
+footer {
+    background-color: var(--c-bg-dark);
+}
+
+header {
+    top: -60px;
+    align-self: flex-start; /* <-- this is the fix */
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    padding:32px;
+    background-color: var(--c-bg-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.wrapper, .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper {
+    /* flex-direction: column; */
+    min-width:800px;
+    width:80%;
+    margin:auto;
+    background-color: var(--c-bg-light);
+}
+
+aside {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 40px;
+    align-self: flex-start; /* <-- this is the fix */
+    flex-grow: 1;
+    min-width:200px;
+    padding:8px;
+}
+main {
+    width:600px;
+    background-color:var(--c-bg-light);
+}
+
+.active {
+    background-color: #F2B705;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightblue;
+    }
+}
