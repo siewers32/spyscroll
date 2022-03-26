@@ -8,11 +8,26 @@
 </head>
 <body>
 <header>
-    <img id="logo" src="assets/deltion.svg" class="standard_size">
+    <div>
+        <img id="logo" src="assets/deltion.svg" class="standard_size">
+        <nav>
+            <ul>
+                <li><a href="navlink">navlink 1</a></li>
+                <li><a href="navlink">auteurs</a></li>
+                <li><a href="navlink">nog iets</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <div class="wrapper">
-        <aside class="rightside">
-            <h2>My Header</h2>
+        <aside class="leftside">
+            <h3>Pagina's</h3>
+            <ul>
+                <li><a href="#">Introductie</a></li>
+                <li><a href="#">Werken met bestanden</a></li>
+                <li><a href="#">Programmeren</a></li>
+                <li><a href="#">Iets anders</a></li>
+            </ul>
 
         </aside>
         <main>
@@ -37,7 +52,8 @@
                 <p>Mauris mollis quis urna id egestas. Morbi sapien metus, fringilla eu gravida a, tempus vel orci. Cras tincidunt odio non tristique congue. Phasellus convallis felis libero, vitae vestibulum ligula pretium ac. Vestibulum sed mauris at augue congue rhoncus. Duis aliquam porta lacus, eget interdum lectus. Nullam convallis lacinia quam ullamcorper egestas. Aenean quis dolor at nisi maximus tristique quis sed est. In congue ipsum ac elit viverra ultricies. Mauris feugiat, urna quis fringilla scelerisque, eros felis tempor lectus, tristique malesuada felis sapien nec turpis. Nulla id tincidunt neque. Nullam quis mauris justo. Phasellus tempus mauris sit amet mi iaculis, a eleifend ligula pretium. Suspendisse potenti.</p>
             </section>
         </main>
-        <aside class="leftside">
+        <aside class="rightside">
+            <h3>Secties</h3>
             <ul>
                 <li>
                     <a class="nav-link active" href="#section1">Naar section 1</a>
@@ -58,7 +74,15 @@
         </aside>
 </div><!-- wrapper -->
 <footer>
-    Dit is de footer
+    <div>
+        <div>onder aside left</div>
+        <div class="pagelink">
+            <a href="#"><- Vorige</a>
+            <a href="#">Volgende -></a>
+        </div>
+        <div>onder aside right</div>
+
+    </div>
 </footer>
 <script>
     const changeHeaderPic = () => {
@@ -106,7 +130,7 @@
                 if (sections.hasOwnProperty(s) && sections[s].offsetTop <= (scrollPos + 100)) {
                     const id = sections[s].id;
                     document.querySelector('.active').classList.remove('active');
-                    document.querySelector(`a[href*=${id}]`).parentNode.classList.add('active');
+                    document.querySelector(`a[href*=${id}]`).classList.add('active');
                 }
             }
         }
