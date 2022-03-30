@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;700&family=Merriweather+Sans:wght@400;700&display=swap');
-
-
 :root {
     scroll-behavior: smooth;
     --c-brand: #f58220;
@@ -157,6 +154,22 @@ div.pagelink {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
+}
+
+footer a {
+    color: var(--c-bg-light);
+}
+
+footer a:hover {
+    border:none;
+}
+
+.footerlink-left, .footerlink-right {
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:16px;
 }
 
 aside {
