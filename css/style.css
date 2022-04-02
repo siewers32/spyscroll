@@ -204,26 +204,15 @@ main, footer > div {
     aside.rightside {
         display:none;
     }
-    .footerlink-left, .footerlink-right {
-        width:40%;
-        margin-left:158px;
-        margin-right:0px;
-    }
 }
 
-@media only screen and (max-width: 880px) {
-    aside.rightside, aside.leftside {
+@media only screen and (max-width:800px) {
+    aside.leftside {
         display:none;
     }
-    .footerlink-left, .footerlink-right {
-        width:40%;
-        margin-left:0px;
-        margin-right:0px;
-    }
     .wrapper, header > div, footer > div {
-        min-width:288px;
+        min-width:320px;
         width:80%;
         margin:auto;
     }
-
 }
