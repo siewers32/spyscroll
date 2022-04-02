@@ -133,7 +133,7 @@ nav ul li a {
     margin:auto;
 }
 
-header > div, footer > div {
+header > div, .pagelink {
     justify-content: space-between;
     align-self: flex-start; /* <-- this is the fix */
     align-items: flex-end;
@@ -145,10 +145,7 @@ footer > div {
     align-items: flex-start;
 }
 
-footer > div > div {
-    flex-shrink:0;
-    width:200px;
-}
+
 
 div.pagelink {
     flex-grow: 1;
@@ -158,18 +155,26 @@ div.pagelink {
 
 footer a {
     color: var(--c-bg-light);
+    padding-bottom: 10px;
 }
 
 footer a:hover {
     border:none;
 }
 
+footer a span {
+    position: relative;
+    top: -6px;
+}
+
 .footerlink-left, .footerlink-right {
-    width:200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline-block;
     margin:16px;
+    width:40%;
+}
+
+.footerlink-right {
+    text-align: right;
 }
 
 aside {
@@ -178,21 +183,21 @@ aside {
     top: 40px;
     align-self: flex-start; /* <-- this is the fix */
     flex-shrink:0;
-    min-width:200px;
+    max-width:200px;
 
 }
 
-aside.leftside {
+.leftside {
     padding-right:16px;
     padding-left: 0px;
 }
 
-aside.rightside {
+.rightside {
     padding-right:16px;
     padding-left: 32px;
 }
 
-main {
+main, footer > div {
     flex-grow: 1;
 }
 
