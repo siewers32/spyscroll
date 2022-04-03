@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            ". aside-left main"
+            "footer footer footer";
+    grid-template-columns: 1fr 200px 8fr;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+div#sections {
+    display:block;
+}
+
+aside#right {
+    display:none;
+}

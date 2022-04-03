@@ -1,0 +1,195 @@
+/* Base settings */
+:root {
+    scroll-behavior: smooth;
+    --c-brand: #f58220;
+    --c-brand-light: #f58220;
+    --c-text: #1d1d67;
+    --c-text-accent: var(--c-brand);
+    --c-text-light-1: #2c2c83;
+    --c-text-light-2: #3939b4;
+    --c-text-light-3: #7878ee;
+    --c-text-light-grey: #949494;
+    --c-bg: #fafafa;
+    --c-bg-light: #f3f3f3;
+    --c-bg-dark:#555555;
+    --fontfamily: 'Helvetica Neue', 'Arial', sans-serif;
+    --codefont: 'Azeret Mono', monospace;
+    --lineheight: 1.8rem;
+    --fontsize: 14px;
+}
+
+body {
+    font-family: var(--fontfamily);
+    font-weight: 400;
+    font-size: var(--fontsize);
+    color: var(--c-text);
+    line-height: var(--lineheight);
+    padding:0px;
+    margin:0px;
+    background-color: var(--c-bg);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--c-text-light-1);
+}
+
+h1 {
+    line-height: calc(var(--lineheight) * 1.5);
+}
+
+h2 {
+    line-height: calc(var(--lineheight) * 1.2);
+}
+
+/* Logo */
+.standard_size {
+    width:70%;
+    margin-bottom: 16px;
+    transition: width 0.4s;
+}
+
+.small_size {
+    width:40%;
+    transition: width 0.4s;
+}
+
+/* Grid */
+div#container {
+    display: grid;
+    grid-template-columns: 1fr 250px minmax(320px, 3fr) 250px 1fr;
+    grid-template-rows: 100px auto 100px;
+    column-gap:32px;
+    row-gap:32px;
+    grid-template-areas:
+    "header header header header header"
+    ". pages content sections ."
+    "footer footer footer footer footer";
+}
+
+
+/* header */
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+    ". logo nav nav .";
+    grid-template-columns: 1fr 250px minmax(320px, 3fr) 250px 1fr;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0px;
+    align-self: flex-start; /* <-- this is the fix */
+    padding-top:16px;
+    background-color: var(--c-bg-light);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+nav {
+    grid-area: nav;
+    justify-self: end;
+    align-self: center;
+}
+
+img#logo {
+    grid-area: logo;
+    justify-self: start;
+    align-self:center;
+}
+
+nav ul {
+    margin: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+/* Pages */
+aside#left {
+    grid-area: pages;
+}
+
+aside#right {
+    grid-area: sections;
+}
+
+aside {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 60px;
+    align-self: flex-start; /* <-- this is the fix */
+    flex-shrink:0;
+}
+
+
+
+/* Content */
+main {
+    grid-area: content;
+}
+
+
+/* Footer */
+footer {
+    grid-area: footer;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--c-text-light-1);
+    font-size: 0.9rem;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--c-brand);
+    color: var(--c-text-light-grey);
+}
+
+
+ul li a {
+    margin-left: 16px;
+    padding-bottom:2px;
+}
+
+.active {
+    border-bottom: 2px solid var(--c-brand);
+}
+@media only screen and (min-width:1001px) {
+    aside#right {
+        display:block;
+    }
+
+    aside#left > div.sections {
+        display:none;
+    }
+
+}
+@media only screen and (max-width:1000px) {
+    div.container {
+        display: grid;
+        grid-template-columns: 32px 250px minmax(320px, 1fr);
+        grid-template-rows: 100px 200px auto 100px;
+        column-gap:32px;
+        row-gap:32px;
+        grid-template-areas:
+    "header header"
+    ". pages content"
+    ". sections content"
+    "footer footer";
+    }
+
+    header {
+        grid-area: header;
+        display: grid;
+        grid-template-areas:
+    "logo nav";
+    }
+
+    aside#right {
+        display:none;
+    }
+
+
+}

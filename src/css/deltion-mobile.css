@@ -1,0 +1,86 @@
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+            ". logo nav nav .";
+    grid-template-columns: minmax(16px, 1fr) 200px minmax(auto, 800px) 200px 1fr;
+    background-color: var(--c-bg);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    align-self: start;
+    position: sticky;
+    top: -40px;
+    height: 100px;
+}
+
+img#logo {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+    align-self: end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main {
+    grid-area: main;
+    align-self: stretch;
+}
+
+aside {
+    align-self: start;
+    position:sticky;
+    top: 100px;
+}
+
+aside#left {
+    grid-area: aside-left;
+}
+
+div#sections {
+    display: none;
+}
+
+aside#right {
+    grid-area: aside-right;
+    margin-left:32px;
+}
+
+div#space-left {
+    grid-area: space-left;
+}
+
+div#space-right {
+    grid-area: space-right;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--c-bg-dark);
+    padding-top:16px;
+    color: var(--c-bg-light);
+}
+
+div#links {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+a#previous-link {
+    display: flex;
+    align-self: flex-start;
+}
+
+a#next-link {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+}
+
+div#copyright {
+    grid-area: copyright;
+    align-self: start;
+    text-align: center;
+}

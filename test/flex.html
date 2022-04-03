@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div>
-        <img id="logo" src="assets/deltion.svg" class="standard_size">
-        <nav>
-            <ul>
-                <li><a href="navlink">navlink 1</a></li>
-                <li><a href="navlink">auteurs</a></li>
-                <li><a href="navlink">nog iets</a></li>
-            </ul>
-        </nav>
-    </div>
+    <img id="logo" src="assets/deltion.svg" class="standard_size">
+    <nav>
+        <ul>
+            <li><a href="navlink">navlink 1</a></li>
+            <li><a href="navlink">auteurs</a></li>
+            <li><a href="navlink">nog iets</a></li>
+        </ul>
+    </nav>
 </header>
 <div class="wrapper">
         <aside class="leftside">
@@ -77,15 +77,18 @@
     <div>
         <div class="footerlink-left">
             <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/><path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/></svg>
-
-                <span>Vorige</span>
+                <span id="arrow-back" class="material-icons">
+                    arrow_back_ios
+                </span>
+                <span class="title">Vorige</span>
             </a>
         </div>
         <div class="footerlink-right">
             <a href="#">
-                <span>Volgende</span>
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+                <span class="title">Volgende</span>
+                <span id="arrow-forward" class="material-icons">
+                    arrow_forward_ios
+                </span>
             </a>
         </div>
     </div>

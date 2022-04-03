@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-areas:
+            "header header header header header"
+            ". aside-left main aside-right ."
+            "bottom-left bottom-left footer bottom-right bottom-right";
+    grid-template-columns: minmax(16px, 1fr) 200px minmax(auto, 800px) 200px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+
+}
+
+div#bottom-left {
+    grid-area: bottom-left;
+    background-color: var(--c-bg-dark);
+}
+
+div#bottom-right {
+    grid-area: bottom-right;
+    background-color: var(--c-bg-dark);
+}
+
+div#sections {
+    display:none;
+}
+
+aside#right {
+    display:block
+}
+
