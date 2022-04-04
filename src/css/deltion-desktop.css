@@ -19,11 +19,13 @@ div#bottom-right {
     background-color: var(--c-bg-dark);
 }
 
-div#sections {
-    display:none;
-}
 
 aside#right {
-    display:block
+    grid-area: aside-right;
+    display:block;
+    margin-left:32px;
 }
 
+aside#left div#sections {
+    display:none;
+}

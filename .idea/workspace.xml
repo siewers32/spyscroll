@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="422a49c3-4405-42ef-b8b0-16fe95003391" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/deltion-desktop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/deltion-mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/deltion-tablet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/deltion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/deltion-theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/assets/deltion.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/css/gridstyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/css/gridstyle2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/css/test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/grid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/grid2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test-tablet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/deltion.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/deltion.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollspy.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/scrollspy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/flex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/deltion-desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion-desktop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/deltion-mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion-mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/deltion-tablet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion-tablet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/deltion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/deltion-theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/deltion-theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

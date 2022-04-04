@@ -1,3 +1,14 @@
+let menu = document.getElementById('menu');
+let pages = document.getElementById('left');
+menu.addEventListener('click', function(e) {
+    e.preventDefault();
+    menuShow();
+});
+window.addEventListener('resize', function() {
+    pages.style.display = 'block';
+});
+
+
 const makeNavLinksSmooth = ( ) => {
     const navLinks = document.querySelectorAll( '.nav-link' );
 
@@ -38,6 +49,14 @@ const spyScrolling = ( ) => {
                 }
             }
         }
+    }
+}
+
+function menuShow() {
+    if(pages.style.display === 'block') {
+        pages.style.display = 'none';
+    } else {
+        pages.style.display = 'block';
     }
 }
 

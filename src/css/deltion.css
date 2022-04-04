@@ -55,6 +55,19 @@ h2 {
     transition: width 0.4s;
 }
 
+
+img#logo {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+    align-self: end;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:16px;
+}
+
 nav a {
     display: inline-block;
     margin-bottom: 5px;
@@ -83,7 +96,6 @@ a:hover {
 }
 
 
-
 footer a {
     color: var(--c-bg-light);
 }
@@ -93,17 +105,47 @@ section {
     margin-top:-50px;
 }
 
+
 section:first-child {
     padding-top:100px;
     margin-top:-100px;
 }
 
-span#menu {
+a#menu {
+    display:flex;
     border: 2px solid #666666;
-    margin-right:32px;
+    padding-top: 2px;
+    padding-bottom:0px;
+    padding-left:2px;
+    padding-right:2px;
+
 }
 
-span#menu a:hover {
-    border: none;
+a#menu:hover {
     color:orange;
+}
+
+
+
+footer div#links {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+footer a#previous-link {
+    display: flex;
+    align-self: flex-start;
+}
+
+footer a#next-link {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+}
+
+footer div#copyright {
+    grid-area: copyright;
+    align-self: start;
+    text-align: center;
 }

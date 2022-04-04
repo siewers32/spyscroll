@@ -1,17 +1,40 @@
 body {
     display: grid;
     grid-template-areas:
-            "header header header"
-            ". aside-left main"
-            "footer footer footer";
-    grid-template-columns: 1fr 200px 8fr;
+            "header header"
+            "aside-left main"
+            "footer footer";
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 100px 1fr 100px;
 }
 
-div#sections {
+aside#left div#sections {
     display:block;
 }
 
+
 aside#right {
     display:none;
+}
+
+aside {
+    position:sticky;
+}
+
+aside#left {
+    grid-area: aside-left;
+    display:block;
+}
+
+nav a {
+    display:block;
+}
+
+nav a#menu {
+    display:none;
+}
+
+section:first-child {
+    padding-top:100px;
+    margin-top: -100px;
 }
