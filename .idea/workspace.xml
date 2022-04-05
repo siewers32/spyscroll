@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/src/css/deltion-tablet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion-tablet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/deltion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/deltion-theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/deltion-theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,5 +87,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

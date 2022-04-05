@@ -73,49 +73,28 @@ nav a {
     margin-bottom: 5px;
     margin-left: 16px;
 }
-
-
 a {
     display: block;
-    width: fit-content;
     text-decoration: none;
-    color: var(--c-text-light-1);
     font-size: 0.9rem;
+    color: var(--c-text-light-1);
     padding-bottom:2px;
 }
 
 a:hover {
     border-bottom: 2px solid var(--c-brand);
-    padding-bottom: 0px;
-    color: var(--c-text-light-grey);
+    padding-bottom:0;
 }
-
-.active {
-    border-bottom: 2px solid var(--c-brand);
-    padding-bottom: 0px;
-}
-
 
 footer a {
     color: var(--c-bg-light);
-}
-
-section {
-    padding-top:50px;
-    margin-top:-50px;
-}
-
-
-section:first-child {
-    padding-top:100px;
-    margin-top:-100px;
 }
 
 a#menu {
     display:flex;
     border: 2px solid #666666;
     padding-top: 2px;
-    padding-bottom:0px;
+    padding-bottom:0;
     padding-left:2px;
     padding-right:2px;
 

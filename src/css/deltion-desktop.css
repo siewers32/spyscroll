@@ -24,6 +24,7 @@ aside#right {
     grid-area: aside-right;
     display:block;
     margin-left:32px;
+    margin-top:16px;
 }
 
 aside#left div#sections {
