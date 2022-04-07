@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="422a49c3-4405-42ef-b8b0-16fe95003391" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/course_css3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_git.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_html5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_javascript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_laravel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_links.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_mysql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_mysql_design.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_php8_beginners.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_php_intermediate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_php_oo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_python.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_slim.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/course_wp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cursussen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/deltion-desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion-desktop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/deltion-mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion-mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/deltion-tablet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion-tablet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/deltion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/deltion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +59,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/css" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
@@ -63,7 +79,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="460f475f-2131-4733-a751-82c4fe8b7d11" name="Changes" comment="" />
+      <changelist id="422a49c3-4405-42ef-b8b0-16fe95003391" name="Changes" comment="" />
       <created>1648283080139</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -71,6 +87,7 @@
       <workItem from="1648283081775" duration="9419000" />
       <workItem from="1648625198212" duration="587000" />
       <workItem from="1648885969812" duration="226000" />
+      <workItem from="1649317970023" duration="500000" />
     </task>
     <servers />
   </component>

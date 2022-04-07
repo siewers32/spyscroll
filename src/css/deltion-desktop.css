@@ -4,9 +4,13 @@ body {
             "header header header header header"
             ". aside-left main aside-right ."
             "bottom-left bottom-left footer bottom-right bottom-right";
-    grid-template-columns: minmax(16px, 1fr) 200px minmax(auto, 800px) 200px 1fr;
+    grid-template-columns: minmax(16px, 1fr) 200px minmax(auto, 900px) 200px 1fr;
     grid-template-rows: 100px 1fr 100px;
 
+}
+
+img#logo {
+    margin-left:16px;
 }
 
 div#bottom-left {
